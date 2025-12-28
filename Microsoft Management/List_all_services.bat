@@ -1,0 +1,1 @@
+dir %windir%\System32\*.msc
