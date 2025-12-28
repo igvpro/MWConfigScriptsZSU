@@ -86,14 +86,14 @@ $ipconfigOutput = ipconfig /all | Out-String
 Add-Content -Path $script:OutputFile -Value "<tr>"
 Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$dateInfo</td>"
 Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$computerName</td>"
-Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$cpuInfo</td>"
+Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$diskInfo</td>"
 Add-Content -Path $script:OutputFile -Value "</tr>"
 
 # Second row: Motherboard | RAM | Hard disks
 Add-Content -Path $script:OutputFile -Value "<tr>"
+Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$cpuInfo</td>"
 Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$boardInfo</td>"
 Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$ramInfo</td>"
-Add-Content -Path $script:OutputFile -Value "<td class='preformatted'>$diskInfo</td>"
 Add-Content -Path $script:OutputFile -Value "</tr>"
 
 # Close top table
