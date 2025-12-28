@@ -1,1 +1,0 @@
-start control.cpl
