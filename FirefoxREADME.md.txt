@@ -1,0 +1,3 @@
+about:config
+
+Updates off
